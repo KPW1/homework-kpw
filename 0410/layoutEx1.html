@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>layoutEx1</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+    <style>
+        body{
+            font-size:16px;
+            font-weight: bold;
+            line-height: 1.6;
+            font-family: 'NanumGothic';
+        }
+        section{
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 20px;
+            overflow: hidden;
+        }
+        div{
+            float:left;
+        }
+        .head h1{
+            width:1000px; height:135px;
+            line-height: 135px;
+            border:1px solid black;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            font-size:33px;
+        }
+        .main {
+            margin-top:20px;
+            width: 600px;
+            height:320px;
+            border:1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .side {
+            margin-top: 20px;
+            margin-left : 30px;
+            width:328px;
+            border:1px solid black;
+            padding:20px;
+            color:white;
+            background-color: black;
+        }
+        .foot {
+            margin-top:20px;
+            padding: 20px;
+            padding-bottom: 40px;
+            border: 1px solid black;
+            width:1000px; height: 166px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="head">
+        <h1>2열 레이아웃</h1>
+    </div>
+    <div class="main">
+        <h2>본문</h2>
+        <p>재산권의 행사는 공공목리에 적합하도록 하여야 한다. 정부는 회계연도마다 예산안을 편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야 한다.</p>
+        <p>대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다. 언론&middot출판에 대한 허가나 검열과 집회&middot결사에 대한 허가는 인정되지 아니한다.</p>
+    </div>
+    <div class="side">
+        <h2>사이드 바</h2>
+        <ul>
+            <li>모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의원칙에 따라 법률로 정한다.</li>
+        </ul>
+    </div>
+    <div class="foot">
+        <h2>바닥글</h2>
+        <p>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</p>
+    </div>
+</section>
+</body>
+</html>
