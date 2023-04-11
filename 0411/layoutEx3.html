@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>layoutEx3</title>
+    <style>
+        body,h1{
+            margin:0;
+            font-weight: bold;
+        }
+        .mar{
+            margin: 30px 0;
+        }
+        .container{
+            width: 940px;
+            margin:0 auto;
+        }
+        .container h1{
+            text-align: center;
+            padding:40px;
+        }
+        .container .gnb{
+            list-style: none;
+            overflow: hidden;
+            display: block;
+            margin: 0;
+            padding: 0 220px;
+            background-color: royalblue;
+        }
+        .container .gnb li{
+            float:left;
+            width:20%;
+        }
+        .container .gnb li a{
+            display: block;
+            color:white;
+            height: 50px; line-height: 50px;
+            text-align: center;
+        }
+        .container .gnb li a:hover{
+            background-color: gray;
+            color:black;
+        }
+        .container article{
+            background-color: orange;
+            text-align: center;
+            padding: 20px;
+        }
+        .container aside{
+            float: left;
+            background-color: red;
+            width: 300px;
+            margin: 0px 0;
+            text-align: center;
+        }
+        .container .center{
+            margin:0px 20px;
+        }
+        .container footer{
+            float: left;
+            background-color: greenyellow;
+            width: 940px;
+            text-align: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>로고</h1>
+        <ul class="gnb">
+            <li><a href="#">홈</a></li>
+            <li><a href="#">상품</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+        <article class="mar">
+            <h2>컨텐츠</h2>
+        </article>
+        <aside class="mar">
+            <p>1번째 열</p>
+        </aside>
+        <aside class="center mar">
+            <p>2번째 열</p>
+        </aside>  
+        <aside class="mar">
+            <p>3번째 열</p>
+        </aside>     
+        <footer class="mar">
+            <h2>ⓒcopyright 2022</h2>
+        </footer>
+    </div>
+
+
+
+    
+    
+</body>
+</html>

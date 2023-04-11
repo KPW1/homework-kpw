@@ -8,3 +8,7 @@ reset css 사용법
 ## 04/10
 
 layout 관련 예제
+
+## 04/11
+
+layout과 float 응용하여 배치하기
