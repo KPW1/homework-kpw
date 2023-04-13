@@ -42,15 +42,21 @@
             list-style: none;
             background-color: yellow;
             margin: 20px 0 0 0;
-            padding: 0;
+            padding: 10px 0px;
         }
         .container header nav menu li{
             display: inline-block;
-            padding: 10px 20px;
         }
         .container header nav menu li a{
             color:purple;
+            background-color: yellow;
             text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .container header nav menu li a:hover{
+            color:aliceblue;
+            background-color: black;
         }
         .container main{
             background-color: rgb(223, 212, 212);
@@ -67,8 +73,8 @@
             border:1px red solid;
             width:300px; height:250px;
             padding: 3px;
-            margin-bottom: 30px;
-            float:left;
+            margin-top:40px;
+            float:left; 
         }
         .container main article figure img{
             width:100%; height: 85%;
@@ -86,7 +92,7 @@
         }
         .container main aside{
             border-left:1px red solid;
-            background-color: #ffeded;
+            background-color: white;
             position: absolute;
             right:0;
             top:0;
@@ -114,17 +120,16 @@
         .container aside p {
             padding: 10px;
         }
-        .container main article .asd p{
+        .container main article p{
             float:left;
-            height: 200px; width: 260px;
+            height: 200px; width: 280px;
         }
-        .container main article .asd2 {
+        .container main article section {
             float:left;
+            margin-top:20px;
         }
-        .clearFix::after{
-            content: "";
-            display: block;
-            clear:both;
+        .container main li a:hover{
+            color:skyblue
         }
     </style>
 </head>
@@ -138,11 +143,11 @@
             </section>
             <nav>
                 <menu>
-                    <li> <a href="">홈</a></li>
-                    <li><a href="">소개</a></li>
-                    <li><a href="">교실</a></li>
-                    <li><a href="">케이터링</a></li>
-                    <li><a href="">연락처</a></li>
+                    <li> <a href="#">홈</a></li>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">교실</a></li>
+                    <li><a href="#">케이터링</a></li>
+                    <li><a href="#">연락처</a></li>
                 </menu>
             </nav>    
         </header>
@@ -153,7 +158,7 @@
                     <figcaption>Oriental Salad
                     </figcaption>
                 </figure>
-                <section class="asd">
+                <section>
                     <h2>채식 주의자</h2>
                     <h3>런던에서의 5주 코스</h3>
                     <p>5주간 채식주의자 음식에 대해 소개하고 쌀과 국수 요리를 가르친다.</p>
@@ -162,26 +167,26 @@
                     <img src="images/sauce.png">
                     <figcaption>Soy Sauce</figcaption>
                 </figure>
-                <section class="asd2">
+                <section>
                     <h2>소스 마스터클래스</h2>
                     <h3>1일 워크샵</h3>
-                    <p>1일 집중 코스에서는 다양한 요리에서<br> 사용할 수 있는 가장 맛있는 소스를<br> 만드는 방법을 살펴본다.</brA></p>
+                    <p>1일 집중 코스에서는 다양한 요리에서 사용할 수 있는 가장 맛있는 소스를 만드는 방법을 살펴본다.</p>
                 </section>
             </article>
             <aside>
                 <h2>인기요리법</h2>
                 <ul>
-                    <li> <a href="">후라이드</a></li>
-                    <li><a href="">고추바사삭</a></li>
-                    <li><a href="">양념치킨</a></li>
-                    <li><a href="">뿌링클</a></li>
+                    <li> <a href="#">후라이드</a></li>
+                    <li><a href="#">고추바사삭</a></li>
+                    <li><a href="#">양념치킨</a></li>
+                    <li><a href="#">뿌링클</a></li>
                 </ul>
                 <h2>연락처</h2>
                 <p>경기 수원시 팔달구 매산로</p>
             </aside>
         </main>
         <footer>
-            <p>ⓒKim's Kitchen 김씨네 키친</p>
+            <p>ⓒ Kim's Kitchen 김씨네 키친</p>
         </footer>
     </div>
     
