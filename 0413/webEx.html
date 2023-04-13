@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>webEx</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        body{
+            background-color:gray;
+        }
+        .container{
+            margin: 0 auto;
+            width: 50%;
+            background-color: purple;
+            position: relative;
+            overflow: hidden;
+        }
+        .container .leica{
+            line-height: 1.0;
+        }
+        .container .leica img{
+            width:80px; height: 80px;
+            position: absolute;
+            top:15px; left:15px;
+        }
+        .container header h1{
+            font-family: 'Dancing Script', cursive;
+            color:white;
+            margin: 0;
+            padding: 10px 0 0 120px;
+            font-size: 50px;
+        }
+        .container header h2{
+            color:white;
+            margin: 0;
+            padding: 0 0 0 120px;
+            font-size: 30px;
+        }
+        .container header nav menu{
+            list-style: none;
+            background-color: yellow;
+            margin: 20px 0 0 0;
+            padding: 0;
+        }
+        .container header nav menu li{
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        .container header nav menu li a{
+            color:purple;
+            text-decoration: none;
+        }
+        .container main{
+            background-color: rgb(223, 212, 212);
+            overflow: hidden;      
+            position: relative;    
+        }
+        .container main article h2{
+            font-weight: bold;
+        }
+        .container main article h3{
+            color:red;
+        }
+        .container main article figure{
+            border:1px red solid;
+            width:300px; height:250px;
+            padding: 3px;
+            margin-bottom: 30px;
+            float:left;
+        }
+        .container main article figure img{
+            width:100%; height: 85%;
+            padding: 0;
+            margin: 0;
+        }
+        .container main article figure figcaption{
+            color:gray;
+            text-align: right;
+            font-style: italic;
+        }
+        .container footer p{
+            padding: 0 0 0 20px;
+            color:white;
+        }
+        .container main aside{
+            border-left:1px red solid;
+            background-color: #ffeded;
+            position: absolute;
+            right:0;
+            top:0;
+            display:inline-block;
+            height: 1000px;
+            width: 250px;
+            overflow: hidden;
+        }
+        .container aside ul{
+            list-style: none;
+            padding: 0;
+        }
+        .container aside ul li{
+            border-bottom: red 1px solid;
+            padding: 10px;
+        }
+        .container aside ul li a{
+            text-decoration: none;
+            color:black;
+        }
+        .container aside h2{
+            color:red;
+            padding:0 0 20px 10px;
+        }
+        .container aside p {
+            padding: 10px;
+        }
+        .container main article .asd p{
+            float:left;
+            height: 200px; width: 260px;
+        }
+        .container main article .asd2 {
+            float:left;
+        }
+        .clearFix::after{
+            content: "";
+            display: block;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <section class="leica">
+                <img src="images/leica.png" alt="">
+                <h1>Kim's Kitchen</h1>
+                <h2>Cooking Class</h2>
+            </section>
+            <nav>
+                <menu>
+                    <li> <a href="">홈</a></li>
+                    <li><a href="">소개</a></li>
+                    <li><a href="">교실</a></li>
+                    <li><a href="">케이터링</a></li>
+                    <li><a href="">연락처</a></li>
+                </menu>
+            </nav>    
+        </header>
+        <main>
+            <article>
+                <figure>
+                    <img src="images/salad2.jpg">
+                    <figcaption>Oriental Salad
+                    </figcaption>
+                </figure>
+                <section class="asd">
+                    <h2>채식 주의자</h2>
+                    <h3>런던에서의 5주 코스</h3>
+                    <p>5주간 채식주의자 음식에 대해 소개하고 쌀과 국수 요리를 가르친다.</p>
+                </section>
+                <figure calss="sauce2">
+                    <img src="images/sauce.png">
+                    <figcaption>Soy Sauce</figcaption>
+                </figure>
+                <section class="asd2">
+                    <h2>소스 마스터클래스</h2>
+                    <h3>1일 워크샵</h3>
+                    <p>1일 집중 코스에서는 다양한 요리에서<br> 사용할 수 있는 가장 맛있는 소스를<br> 만드는 방법을 살펴본다.</brA></p>
+                </section>
+            </article>
+            <aside>
+                <h2>인기요리법</h2>
+                <ul>
+                    <li> <a href="">후라이드</a></li>
+                    <li><a href="">고추바사삭</a></li>
+                    <li><a href="">양념치킨</a></li>
+                    <li><a href="">뿌링클</a></li>
+                </ul>
+                <h2>연락처</h2>
+                <p>경기 수원시 팔달구 매산로</p>
+            </aside>
+        </main>
+        <footer>
+            <p>ⓒKim's Kitchen 김씨네 키친</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
