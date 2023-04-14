@@ -23,17 +23,18 @@
             overflow: hidden;
             border: 5px pink solid;
         }
-        .container .leica{
-            line-height: 1.0;
-        }
-        .container .leica img{
-            width:80px; height: 80px;
-            position: absolute;
-            top:15px; left:15px;
-        }
+        /* 헤더 */
         .container header{
             height: 130px;
             margin-bottom: 30px;
+        }
+        .container header .leica{
+            line-height: 1.0;
+        }
+        .container header .leica img{
+            width:80px; height: 80px;
+            position: absolute;
+            top:15px; left:15px;
         }
         .container header h1{
             font-family: 'Dancing Script', cursive;
@@ -68,6 +69,7 @@
             color:aliceblue;
             background-color: black;
         }
+        /* 메인 */
         .container main{
             background-color: rgb(223, 212, 212); 
             position: relative;    
@@ -100,10 +102,6 @@
             text-align: right;
             font-style: italic;
         }
-        .container footer p{
-            padding: 0 0 0 20px;
-            color:white;
-        }
         .container main aside{
             border-left:1px red solid;
             background-color: white;
@@ -115,10 +113,18 @@
             width: 280px;
             overflow: hidden;
         }
-        .container aside ul{
-            list-style: none;
-            padding: 0;
+        .container main article p{
+            float:left;
+            height: 160px; width: 280px;
+            margin: 0;
         }
+        .container main article section {
+            float: left;
+        }        
+        .container main article section:nth-of-type(1) {
+            margin-top:10px;
+        } 
+        /* 사이드 */
         .container aside ul li a{
             text-decoration: none;
             color:black;
@@ -139,20 +145,19 @@
             padding: 0 0 0 20px;
             font-size: 20px;
         }
-        .container main article p{
-            float:left;
-            height: 160px; width: 280px;
-            margin: 0;
+        .container aside ul{
+            list-style: none;
+            padding: 0;
         }
-        .container main article section {
-            float: left;
-        }        
-        .container main article section:nth-of-type(1) {
-            margin-top:10px;
-        } 
-        .container main li a:hover{
+        .container aside li a:hover{
             background-color: black;
             color:skyblue
+        }
+
+        /* 마지막 */
+        .container footer p{
+            padding: 0 0 0 20px;
+            color:white;
         }
     </style>
 </head>
