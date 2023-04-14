@@ -9,13 +9,15 @@
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
         body{
             background-color:gray;
+            background: url(images/bg2.png);
         }
         .container{
             margin: 0 auto;
-            width: 50%;
+            width: 940px;
             background-color: purple;
             position: relative;
             overflow: hidden;
+            border: 5px pink solid;
         }
         .container .leica{
             line-height: 1.0;
@@ -24,6 +26,10 @@
             width:80px; height: 80px;
             position: absolute;
             top:15px; left:15px;
+        }
+        .container header{
+            height: 130px;
+            margin-bottom: 30px;
         }
         .container header h1{
             font-family: 'Dancing Script', cursive;
@@ -41,7 +47,7 @@
         .container header nav menu{
             list-style: none;
             background-color: yellow;
-            margin: 20px 0 0 0;
+            margin: 30px 0 0 0;
             padding: 10px 0px;
         }
         .container header nav menu li{
@@ -59,9 +65,10 @@
             background-color: black;
         }
         .container main{
-            background-color: rgb(223, 212, 212);
-            overflow: hidden;      
+            background-color: rgb(223, 212, 212); 
             position: relative;    
+            overflow: hidden;
+            height: 600px;
         }
         .container main article h2{
             font-weight: bold;
@@ -71,10 +78,13 @@
         }
         .container main article figure{
             border:1px red solid;
-            width:300px; height:250px;
+            width:300px; height:220px;
             padding: 3px;
-            margin-top:40px;
             float:left; 
+            margin: 20px 20px;
+        }
+        .container main article figure:nth-child(1){
+            margin-top:30px;
         }
         .container main article figure img{
             width:100%; height: 85%;
@@ -85,6 +95,7 @@
             color:gray;
             text-align: right;
             font-style: italic;
+ 
         }
         .container footer p{
             padding: 0 0 0 20px;
@@ -98,7 +109,7 @@
             top:0;
             display:inline-block;
             height: 1000px;
-            width: 250px;
+            width: 280px;
             overflow: hidden;
         }
         .container aside ul{
@@ -113,23 +124,29 @@
             background-color: white;
             display:inline-block;
             border-bottom: red 1px solid;
-            padding: 10px;
+            padding: 10px 20px;
+            font-size: 20px;
         }
         .container aside h2{
             color:red;
-            padding:0 0 20px 10px;
+            padding:0 0 20px 20px;
+            font-size:24px
         }
         .container aside p {
-            padding: 10px;
+            padding: 0 0 0 20px;
+            font-size: 20px;
         }
         .container main article p{
             float:left;
-            height: 200px; width: 280px;
+            height: 160px; width: 280px;
+            margin: 0;
         }
         .container main article section {
-            float:left;
-            margin-top:20px;
-        }
+            float: left;
+        }        
+        .container main article section:nth-of-type(1) {
+            margin-top:10px;
+        } 
         .container main li a:hover{
             background-color: black;
             color:skyblue
@@ -182,10 +199,10 @@
                     <li> <a href="#">후라이드</a></li>
                     <li><a href="#">고추바사삭</a></li>
                     <li><a href="#">양념치킨</a></li>
-                    <li><a href="#">뿌링클</a></li>
+                    <li><a href="#">강정</a></li>
                 </ul>
                 <h2>연락처</h2>
-                <p>경기 수원시 팔달구 매산로</p>
+                <p>경기 수원시 팔달구 매산동</p>
             </aside>
         </main>
         <footer>
