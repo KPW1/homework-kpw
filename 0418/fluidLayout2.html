@@ -5,30 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>fluidLayout2</title>
   <style>
+    * { box-sizing: border-box; }
     body { margin:0; font-weight: bold; font-size: 20px;}
     .box {
       width:33.33333%;
       height:33.333vh;
       float: left;
     }
+    .container { border: 3px solid black; overflow: hidden;}
     .box1 { background-color: #a8d5e2;}
     .box2 { background-color: #f9a620; color:#fff; }
     .box3 { background-color: #ffd449;}
     .box4 { background-color: #548c2f; color:#fff; width:100% }
-    .box5 { background-color: #104911; color:#fff; width:25%; height:33.333vh}
-    .box6 { background-color: rgb(44, 44, 14); color:#fff; width:25%; height:33.333vh}
-    .box7 { background-color: greenyellow; width:25%; height:33.333vh}
-    .box8 { background-color: skyblue;  width:25%; height:33.333vh}
+    .box5 { background-color: #104911; color:#fff; width:25%; height:32.75vh}
+    .box6 { background-color: rgb(44, 44, 14); color:#fff; width:25%; height:32.75vh}
+    .box7 { background-color: greenyellow; width:25%; height:32.75vh}
+    .box8 { background-color: skyblue;  width:25%; height:32.75vh}
   </style>
 </head>
 <body>
-  <div class="box box1">box1</div>
-  <div class="box box2">box2</div>
-  <div class="box box3">box3</div>
-  <div class="box box4">box4</div>
-  <div class="box box5">box5</div>
-  <div class="box box6">box6</div>
-  <div class="box box7">box7</div>
-  <div class="box box8">box8</div>
+  <div class="container">
+    <div class="box box1">box1</div>
+    <div class="box box2">box2</div>
+    <div class="box box3">box3</div>
+    <div class="box box4">box4</div>
+    <div class="box box5">box5</div>
+    <div class="box box6">box6</div>
+    <div class="box box7">box7</div>
+    <div class="box box8">box8</div>
+  </div>
 </body>
 </html>
+<!--이종화 : 화면 꽉 채우면서 스크롤 안 생기게 잘 만드신 거 같습니다 !! 테두리 선을 넣어야 하는 거 같아서 클래스 추가하고 넣었습니다. border 값 주고 나니 스크롤이 생겨서.. vh값도 조금씩 줄였습니다.  고생하셨습니다 !!!-->
