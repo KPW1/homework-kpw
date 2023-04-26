@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transEx4</title>
+    <style>
+        /* 
+            input:focus { 텍스트 필드에 포커스가 잡히면}
+            input:checked { 체크박스에 체크가 되면}
+            input:disabled { 비활성 }
+
+            input[type=checkbox]:checked {}
+        */
+        .container {
+            margin: 10px 0;
+            width: 1000px;
+            height: 1000px;
+            display: flex;
+            flex-direction: column; 
+        }
+        main{
+            width: 400px;
+            height: 400px;
+            background-color: #d88282;
+            transition: 0.5s; 
+            overflow: hidden;
+        }
+        article{
+            width: 600px; 
+            height: 100px;
+            background-color: #5ee4d2;            
+            transition: 0.5s;
+        }
+        input[type=checkbox]:checked ~ .container article{
+            transform: translateY(-100px);
+        }
+        input[type=checkbox]:checked ~ .container main {
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>trans 연습 4</h1>
+    <input type="checkbox" name="check" id="check">
+    <label for="check">체크 박스가 체크되면 박스가 위로 올라와 사라집니다</label>
+    <div class="container">
+        <main>
+            <h2>:checked</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, totam fugiat quo explicabo </p>
+        </main>
+        <article>
+            block
+        </article>
+    </div>
+
+</body>
+</html>
