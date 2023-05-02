@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>flexEx1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../common/minireset.min.css">
+    <style>
+        body {
+            background-color: #d8e0ca;
+            color: #85857f;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container .head {
+            width: 100%;
+            background-color: #fafaf0;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            padding: 50px 200px;
+        }
+        .container em {
+            color: black;
+            font-style: italic;
+        }
+        .container h1 {
+            font-weight: bold;
+            font-size: 5rem;
+        }
+        .container h2 {
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        .container p {
+            padding: 20px 0;
+        }
+        /* 버튼 */
+        .container .button {
+            color: black;
+            margin: 30px 0;
+            border: 1px solid black;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 5px;
+            font-weight: bold;
+            position: relative;
+        }
+        .container .con1 .button{
+            width: 150px;
+        }
+        .container .con2 .button{
+            width: 150px;
+        }
+        .container .con3 .button{
+            width: 200px;
+        }
+        .container .button .arrow{
+            font-size: 20px;
+            height: 50px;
+            line-height: 50px;
+            margin: 0;
+            color: #85857f;
+        }
+
+        /* 이미지 */
+        .container .con1 .img1 {
+            width: 60%;
+            height: 100%;
+            background: url(./images/s1.jfif) no-repeat 100% 50% / cover;
+        }
+        .container .con3 .img2 {
+            width: 60%;
+            height: 100%;
+            background: url(images/s2.jfif) no-repeat 100% 50% / cover;
+        }
+
+        /* 메인 */
+        .container .con1 {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 0 0 0 50px;
+        }
+        .container .con1 .txt1 {
+            padding: 80px 0;
+            width: 40%;
+        }
+
+        .container .con2 {
+            display: flex;
+            width: 100%;
+            height: 50vh;
+            background-color: #fafaf0;
+            justify-content: center;
+            padding: 50px;
+        }
+        .container .con2 .con2-1{
+            width: 20%;
+            height: 100%;
+            margin: 0 50px;
+        }
+        .container .con2 .con2-2{
+            width: 20%;
+            height: 100%;
+            margin: 0 50px;
+        }
+
+        .container .con3 {
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            padding: 0 50px 0 0;
+        }
+        .container .con3 .txt2 {
+            padding: 80px 0 0 50px;
+            width: 40%;
+            height: 100%;
+        }
+
+        .container .con4 {
+            width: 100%;
+            height: 60vh;
+            background-color: #fafaf0;
+            padding: 100px 600px;
+        }
+        .container .con4 .mail {
+            display: flex;
+            align-items: center;
+        }
+        .container .con4 .mail .email {
+            background-color: #fafaf0;
+            flex-wrap: wrap;
+            border-radius: 30px;
+            border: 1px solid black;
+            height: 50px;
+            width: 400px;
+            display:flex;
+            padding: 0 10px;
+            margin: 0 20px 0 0;
+            align-content: center;
+        }
+        
+        /* 아이콘 */
+        svg {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <p><em>Aliquam</em> Consequat</p>
+            <h1>Sed amet</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet fugiat accusamus saepe hic atque consectetur quod ut quibusdam, vel dolorem doloremque beatae pariatur voluptatum non magni impedit culpa mollitia dolorum!</p>
+            <div class="button">SAGITTIS<span class="material-symbols-outlined arrow">arrow_forward</span>
+            </div>
+
+        </div>
+        <div class="con1">
+            <div class="txt1">
+                <p><em>Nisi</em> Pellentesque</p>
+                <h2>Morbi tincidunt</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit tempore distinctio ullam amet adipisci corporis voluptatum dolor! Nostrum eius at sequi, culpa tenetur eum, numquam deleniti reprehenderit voluptate, ut libero!</p>
+                <div class="button">LECTUS<span class="material-symbols-outlined arrow">arrow_forward</div>
+            </div>
+                <div class="img1">
+                </div>
+        </div>
+        <div class="con2">
+            <div class="con2-1">
+                <p><em>Dolor</em> Ultrices</p>
+                <h2>Ullamcorper</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi voluptatum quibusdam cupiditate, dicta doloremque corrupti ipsa id vel minus, veritatis enim quo inventore eius quos tempora. Iure, non est?</p>                
+                <div class="button">MAGNA<span class="material-symbols-outlined arrow">arrow_forward</div>
+
+            </div>
+            <div class="con2-2">
+                <p><em>Magna</em> Aenean</p>
+                <h2>Faucibus</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi voluptatum quibusdam cupiditate, dicta doloremque corrupti ipsa id vel minus, veritatis enim quo inventore eius quos tempora. Iure, non est?</p>                
+                <div class="button">TELLUS<span class="material-symbols-outlined arrow">arrow_forward</div>
+            </div>
+        </div>
+        <div class="con3">
+            <div class="txt2">
+                <p><em>Odio</em> Veroeros</p>
+                <h2>Quam nulla</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita iure illum necessitatibus adipisci aliquid nostrum similique dicta. Quo fugit, repudiandae velit ab accusantium temporibus praesentium excepturi in corporis consequatur eius.</p>
+                <div class="button">EUISMOD<span class="material-symbols-outlined arrow">arrow_forward</div>
+            </div>
+            <div class="img2">
+            </div>
+        </div>
+        <div class="con4">
+            <p><em>Vitae</em> Aliquam</p>
+            <h2>Auctor orci</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim ipsum aliquam, vitae, quos obcaecati sequi cumque mollitia incidunt harum possimus deleniti deserunt sunt magnam consequuntur reiciendis, praesentium blanditiis dicta!</p>
+            <div class="mail">
+                <div class="email">Email</div>
+                <div class="button">SUBSCRIBE<span class="material-symbols-outlined arrow">arrow_forward</div>
+            </div>
+            
+            <div class="icon">
+                
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" stroke-width="0" fill="currentColor" />
+  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" stroke-width="0" fill="currentColor"></path>
+ </svg>
+ <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+    <path d="M16.5 7.5l0 .01"></path>
+ </svg>
+ <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
+    <path d="M3 6l9 6l9 -6"></path>
+    <path d="M15 18h6"></path>
+    <path d="M18 15l3 3l-3 3"></path>
+ </svg>
+  
+  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

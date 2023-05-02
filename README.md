@@ -28,3 +28,7 @@ webpage 예제 만들어보기
 ## 04/26
 
 transition 과 transform 이용한 예제
+
+## 05/02
+
+flex를 이용한 레이아웃 예제
