@@ -80,10 +80,50 @@ header .plus ul li:first-child a{
 header .plus ul li a span {
     margin-right: 5px;
 }
-
+main .img_txt2{
+    font-family: 'Noto Sans KR', sans-serif;
+    z-index: 1;
+    font-size: 100px;
+    width: 800px;
+    height: 600px;
+    color: white;
+    position: absolute;
+    font-size: 68px;
+    line-height: 80px;
+    bottom: 0;
+    left:200px;
+    font-weight: 700;
+    font-style: italic;
+}
+main .img_txt2 .italic{
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 400;
+    width: 100%;
+    position: absolute;
+    bottom: 600px;
+    left:30px;
+}
+main .img p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 450px;
+    left:210px;
+    width: 330px;
+}
 main .img{
+    position: relative;
     width: 100%;
     height: 100vh;
+}
+.indent {
+    position: absolute;
+    top:0px;
+    left:10px;
 }
 main .img img{
     position: absolute;
