@@ -603,6 +603,9 @@ footer .inner .f_head ul li {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+.f_con dt {
+    margin-right:10px ;
+}
 .ft_se {
     width: 200px;
     height: 40px;
