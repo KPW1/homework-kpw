@@ -619,6 +619,13 @@ footer .inner .f_head ul li {
 .kor {
     display: flex;
 }
+.kor svg {
+    fill: #7c7c7b;
+    color: #7c7c7b;
+    width: 10px;
+    margin-left: 7px;
+    transform: rotate(180deg);
+}
 .f_quick {
     display: flex;
     align-items: center;
