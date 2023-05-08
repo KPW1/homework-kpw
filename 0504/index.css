@@ -244,7 +244,7 @@ main .bs_area {
     padding: 0px 30px;
 }
 main .bs_info {
-    width: 800px;
+    width: calc(50% - 160px);
     height: 600px;
     padding: 0;
     background-color: #eee;
@@ -255,21 +255,22 @@ main .bs_info {
 main .bs_info::before {
     content: "";
     display: block;
-    width: 200px;
-    height: 600px;
+    width: 100%;
     background-color: #eee;
     position: absolute;
     right: 100%;
+    top:0;
+    bottom: 0;
 }
 main .bs_info::after {
     content: "";
     display: block;
-    width: 80px;
-    height: 600px;
+    width: 70px;
     background-color: #eee;
     position: absolute;
     left: 100%;
     bottom: 0;
+    top:0;
 }
 main .bs_info ul {
     width: 100%;
