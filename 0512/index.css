@@ -284,8 +284,8 @@ main .value ul li a:hover .value-main {
   color: black;
 }
 main .value ul li a:hover .more {
-  color: black;
-  border-bottom: 2px solid orange;
+  color: rgb(240, 92, 92);
+  border-bottom: 2px solid rgb(240, 92, 92);
 }
 main .value ul li .icon {
   padding: 40px 0 20px 0;
