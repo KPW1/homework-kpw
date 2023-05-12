@@ -387,13 +387,21 @@ main .product .product-con .product-list li p {
 }
 .partner .partner-wrapper .partner-img li {
   width: 22%;
-  height: 100px;
+  display: flex;
   margin: 1% 1%;
+}
+.partner .partner-wrapper .partner-img li a {
+  width: 100%;
+  height: 100px;
   padding: 25px 0;
   background-color: #fff;
   position: relative;
+  transition: 0.3s;
 }
-.partner .partner-wrapper .partner-img li img {
+.partner .partner-wrapper .partner-img li a:hover {
+  background-color: skyblue;
+}
+.partner .partner-wrapper .partner-img li a img {
   width: 40%;
   position: absolute;
   top: 50%;
