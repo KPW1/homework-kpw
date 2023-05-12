@@ -516,6 +516,7 @@ main .product .product-con .product-list li p {
   outline: none;
   border: 0;
   height: 200px;
+  resize: none;
 }
 
 .help .support-main .go a {
