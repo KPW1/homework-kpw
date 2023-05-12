@@ -517,6 +517,7 @@ main .product .product-con .product-list li p {
   border: 0;
   height: 200px;
   resize: none;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .help .support-main .go a {
