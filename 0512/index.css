@@ -1,9 +1,11 @@
 @charset "utf-8";
 
+/* 변수선언 */
+@import url(./variable.css);
+
 /* header */
 header {
   color: white;
-  display: flex;
   width: 100%;
   border-bottom: 1px solid #a8a2a2;
   height: 10vh;
@@ -34,12 +36,10 @@ header .menu1 {
   width: 60%;
   font-weight: 700;
   font-size: 19px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 header .menu1 menu {
-  display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -48,7 +48,7 @@ header .menu1 menu li a {
   transition: 0.3s;
 }
 header .menu1 menu li a:hover {
-  color: orange;
+  color: var(--orange-color);
 }
 header .login {
   position: absolute;
@@ -56,15 +56,11 @@ header .login {
   right: 0;
   transform: translateY(-50%);
   width: 15%;
-  display: flex;
   align-items: center;
 }
 header .login ul li a {
   font-size: 13px;
   transition: 0.3s;
-}
-header .login ul {
-  display: flex;
 }
 header .login ul li {
   display: flex;
@@ -77,11 +73,10 @@ header .login ul li:nth-child(1)::after {
   padding: 10px;
 }
 header .login ul li a:hover {
-  color: orange;
+  color: var(--orange-color);
 }
 header .menu2 {
   transition: 0.3s;
-  display: flex;
   width: 5%;
   align-items: center;
   position: absolute;
@@ -91,7 +86,7 @@ header .menu2 {
   transition: 0.3s;
 }
 header .menu2:hover {
-  color: orange;
+  color: var(--orange-color);
 }
 header .menu2 span {
   float: right;
@@ -128,7 +123,6 @@ main .img .img-text p {
 main .img .arrow {
   z-index: 1;
   text-align: center;
-  display: flex;
   position: absolute;
   bottom: -5px;
   width: 100%;
@@ -145,7 +139,7 @@ main .img .arrow span {
   cursor: pointer;
 }
 main .img .arrow span:hover {
-  color: skyblue;
+  color: var(--sky-color);
 }
 main .img .arrow svg {
   width: 20px;
@@ -223,7 +217,7 @@ main .open .open-txt a {
   font-size: 12px;
 }
 main .open .open-txt a:hover {
-  background-color: orange;
+  background-color: var(--orange-color);
   color: black;
 }
 main .top a {
@@ -242,6 +236,12 @@ main .top a {
 main .top a span {
   color: white;
   font-size: 26px;
+}
+main .top a:hover {
+  background-color: var(--sky-color);
+}
+main .top a:hover span {
+  color: black;
 }
 /*** contents ***/
 /* value */
@@ -269,7 +269,6 @@ main .value h3 {
   padding-bottom: 60px;
 }
 main .value ul {
-  display: flex;
   justify-content: center;
 }
 main .value ul li a {
@@ -285,16 +284,16 @@ main .value ul li .more {
   transition: 0.3;
   font-size: 13px;
   display: inline-block;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid var(--gray-color);
   padding: 0;
   margin: 0 auto;
   font-weight: 600;
-  color: #666;
+  color: var(--gray-color);
   line-height: 1.48;
   text-transform: uppercase;
 }
 main .value ul li a:hover {
-  background-color: skyblue;
+  background-color: var(--sky-color);
   color: black;
 }
 main .value ul li a:hover .value-main {
@@ -318,7 +317,7 @@ main .value ul li h3 {
 main .value ul li .value-main {
   font-size: 16px;
   margin: 0 auto;
-  color: #666666;
+  color: var(--gray-color) 666;
   font-weight: 400;
   padding-bottom: 25px;
   line-height: 1.48;
@@ -337,7 +336,6 @@ main .product {
 }
 
 main .product .product-con .product-list {
-  display: flex;
   justify-content: center;
 }
 main .product .product-con .product-list li {
@@ -354,14 +352,13 @@ main .product .product-con .product-list li img {
   height: 300px;
   margin-bottom: 20px;
 }
-
 main .product .product-con .product-list li h5 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 main .product .product-con .product-list li p {
   font-size: 16px;
-  color: #666;
+  color: var(--gray-color);
 }
 
 /* download */
@@ -378,7 +375,6 @@ main .product .product-con .product-list li p {
   width: 100%;
   height: 100%;
   margin: auto;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -391,7 +387,6 @@ main .product .product-con .product-list li p {
   width: 100%;
 }
 .download .down-info .down-btn {
-  display: flex;
   margin: 0 auto;
   display: inline-block;
   border-radius: 30px;
@@ -426,7 +421,6 @@ main .product .product-con .product-list li p {
 }
 .partner .partner-wrapper .partner-img {
   width: 100%;
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -444,7 +438,7 @@ main .product .product-con .product-list li p {
   transition: 0.3s;
 }
 .partner .partner-wrapper .partner-img li a:hover {
-  background-color: skyblue;
+  background-color: var(--sky-color);
 }
 .partner .partner-wrapper .partner-img li a img {
   width: 40%;
@@ -467,7 +461,6 @@ main .product .product-con .product-list li p {
   text-transform: capitalize;
   position: relative;
   text-align: center;
-  display: flex;
 }
 .help .map {
   width: 50%;
@@ -547,7 +540,6 @@ main .product .product-con .product-list li p {
 }
 .notice .notice-wrapper {
   width: 100%;
-  display: flex;
   align-items: center;
   max-width: 1280px;
   flex-wrap: wrap;
@@ -565,7 +557,7 @@ main .product .product-con .product-list li p {
   font-size: 16px;
   font-weight: 400;
   padding-bottom: 40px;
-  color: #666;
+  color: var(--gray-color);
 }
 .notice .notice-wrapper .notice-left a {
   display: flex;
@@ -606,7 +598,7 @@ main .product .product-con .product-list li p {
 .date {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 18px;
-  color: #666;
+  color: var(--gray-color);
   float: right;
 }
 /* footer */
@@ -618,14 +610,12 @@ footer {
   line-height: 1.78;
 }
 footer .footer-wrapper {
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   position: relative;
 }
 footer .footer-wrapper .footer-left {
-  display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: 70%;
@@ -637,7 +627,6 @@ footer .footer-wrapper .footer-left .ft-logo img {
   width: 250px;
 }
 footer .footer-wrapper .footer-left .ft-info {
-  display: flex;
   width: 70%;
   align-items: center;
   flex-wrap: wrap;
@@ -661,7 +650,7 @@ footer .footer-wrapper .footer-left .ft-info .top-info li:first-child a::after {
   width: 1px;
   height: 12px;
   margin-left: 13px;
-  background-color: #666;
+  background-color: var(--gray-color);
 }
 footer .footer-wrapper .footer-left .ft-info .btm-info {
   width: 100%;

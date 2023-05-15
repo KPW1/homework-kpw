@@ -22,3 +22,6 @@ main :is(.product, .partner) h4 {
   color: #666;
   padding-bottom: 60px;
 }
+.flex {
+  display: flex;
+}
