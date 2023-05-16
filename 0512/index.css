@@ -632,7 +632,15 @@ footer .footer-wrapper .footer-left .ft-logo {
   width: 30%;
 }
 footer .footer-wrapper .footer-left .ft-logo img {
-  width: 250px;
+  width: 200px;
+}
+footer .footer-wrapper .footer-left .ft-logo p {
+  width: 100%;
+  font-size: 16px;
+  color: rgb(85, 85, 85);
+  padding-left: 10px;
+  letter-spacing: 35px;
+  color: white;
 }
 footer .footer-wrapper .footer-left .ft-info {
   width: 70%;
