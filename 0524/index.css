@@ -359,11 +359,12 @@ html {
 
 .container main .service {
   padding: 54px;
-  height: 800px;
+  width: 100%;
   position: relative;
 }
 .container main .service img {
   width: 100%;
+  object-fit: cover;
 }
 .container main .service h1 {
   text-align: center;
@@ -384,13 +385,15 @@ html {
 }
 .container main .service .list-box {
   display: flex;
-  justify-content: space-around;
-  height: 450px;
-  align-items: center;
+  justify-content: space-evenly;
+}
+.container main .service .list-box .list {
+  margin: 12px;
 }
 .container main .service .list-box .list-txt {
-  padding: 24px;
+  padding: 10px;
   color: #212529;
+  display: block;
 }
 .container main .service .list-box .list .list-txt h2 {
   font-family: "Montserrat", sans-serif;
@@ -404,18 +407,8 @@ html {
   font-weight: 400;
   line-height: 1.8;
 }
-.container main .service .list-box .list2 {
-  width: 30%;
-  height: 100%;
-}
 .container main .service .list-box .list1 {
-  width: 30%;
-  height: 80%;
   opacity: 0.5;
-}
-.container main .service .list-box .list1 img {
-  width: 90%;
-  margin: 0 auto;
 }
 .container main .service .list-box .list2 {
   box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -434,7 +427,7 @@ html {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
 }
