@@ -28,7 +28,23 @@ html {
   align-items: center;
   justify-content: center;
 }
-
+.container main .up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.container main .up {
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+}
 .container main .kakao {
   border-radius: 40px;
   border: 1px solid #ddd;
