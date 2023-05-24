@@ -15,7 +15,6 @@ html {
   width: 100%;
   padding: 0 3vw;
   flex-wrap: wrap;
-  box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
 }
@@ -111,7 +110,7 @@ html {
   background-color: black;
 }
 .container main .creative img {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
 }
 .container main .creative .cr-num {
@@ -263,7 +262,7 @@ html {
 .container main .business .busy-txt p {
   text-align: center;
   line-height: 1.8;
-  width: 500px;
+  width: 100%;
   display: flex;
   font-weight: 300;
   font-size: 20px;
@@ -350,6 +349,8 @@ html {
   line-height: 1.5;
 }
 .container main .youtube-wrapper .youtube {
+  width: 80%;
+  margin: auto;
   margin-top: 60px;
   display: flex;
   justify-content: center;
