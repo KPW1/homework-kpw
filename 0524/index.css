@@ -1,0 +1,661 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background: #fff;
+  z-index: 999;
+}
+
+.container .header-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 3vw;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container header .header-wrapper img {
+  height: 60px;
+}
+
+.container header .header-wrapper span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container main .kakao {
+  border-radius: 40px;
+  border: 1px solid #ddd;
+  width: 104px;
+  height: 44px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: white;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.container main .kakao svg {
+  float: left;
+  width: 44px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid#ddd;
+}
+.container main .kakao p {
+  font-size: 16px;
+  line-height: 40px;
+  text-indent: 3px;
+  font-weight: 700;
+}
+.container main .creative {
+  width: 100%;
+  background: rgb(201, 220, 220) url(./images/hero-bg.png) no-repeat center
+    center / cover;
+  padding: 3rem;
+  padding-top: 5rem;
+}
+
+.container main .creative h1 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 2rem;
+  letter-spacing: 6px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container main .creative .cr-txt {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: calc(1.675rem + 5.1vw);
+  text-align: center;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: #212529;
+}
+
+.container main .creative .cr-txt span {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+.container main .creative .cr-txt span:hover {
+  color: white;
+  background-color: black;
+}
+.container main .creative img {
+  width: 500px;
+  margin: 0 auto;
+}
+.container main .creative .cr-num {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #8a7c7c;
+  font-family: "Noto Sans KR", sans-serif;
+  cursor: pointer;
+}
+
+.container main .creative .cr-num p {
+  margin-right: 5px;
+}
+
+.container main .creative .cr-num p:first-child {
+  position: relative;
+  margin-right: 30px;
+  color: black;
+}
+
+.container main .creative .cr-num p:first-child::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(40%);
+  width: 25px;
+  height: 2px;
+  background-color: black;
+}
+
+.container main .brand {
+  padding: 54px 54px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #212529;
+  font-weight: 400;
+}
+
+.container main .brand ul li {
+  border-bottom: 1px solid #ddd;
+  padding: 16px;
+}
+
+.container main .brand ul li strong {
+  text-transform: capitalize;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container main .picture ul {
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "i1 i1 i2 i2 "
+    "i1 i1 i2 i2 "
+    "i3 i3 i4 i4 "
+    "i3 i3 i5 i5 "
+    "i6 i6 i7 i7 "
+    "i6 i6 i7 i7 ";
+}
+
+.container main .picture ul li {
+  position: relative;
+}
+.container main .picture ul li:first-child {
+  grid-area: i1;
+}
+.container main .picture ul li:nth-child(2) {
+  grid-area: i2;
+}
+.container main .picture ul li:nth-child(3) {
+  grid-area: i3;
+}
+.container main .picture ul li:nth-child(4) {
+  grid-area: i4;
+}
+.container main .picture ul li:nth-child(5) {
+  grid-area: i5;
+}
+.container main .picture ul li:nth-child(6) {
+  grid-area: i6;
+}
+.container main .picture ul li:last-child {
+  grid-area: i7;
+}
+.container main .picture ul li img {
+  width: 100%;
+}
+
+.container main .picture ul li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.6s ease-in-out;
+}
+.container main .picture ul li span a {
+  position: absolute;
+  top: 35%;
+}
+
+.container main .picture ul li:hover span {
+  opacity: 0.65;
+}
+.container main .picture ul li span a:hover {
+  color: rgb(0, 183, 255);
+  opacity: 1;
+}
+
+.container main .business {
+  padding: 54px;
+  width: 100%;
+  color: #212529;
+}
+.container main .business .busy-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container main .business .busy-txt h1 {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-size: 43px;
+  font-weight: 700;
+}
+.container main .business .busy-txt h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin: 24px auto;
+  background-color: black;
+}
+.container main .business .busy-txt p {
+  text-align: center;
+  line-height: 1.8;
+  width: 500px;
+  display: flex;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.container main .business .busy-img {
+  margin-top: 100px;
+}
+.container main .business .busy-img .img {
+  position: relative;
+}
+.container main .business .busy-img .img span {
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+}
+.container main .business .busy-img .img:hover span {
+  opacity: 1;
+}
+.container main .business .busy-img .img:hover span:hover {
+  color: white;
+  background-color: black;
+}
+.container main .business .busy-img .img .back {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.container main .business .busy-img .img-txt {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.container main .business .busy-img .img-txt h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+.container main .business .busy-img .img-txt p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+}
+.container main .business img {
+  width: 100%;
+}
+
+.container main .youtube-wrapper {
+  padding: 54px;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+.container main .youtube-wrapper .youtube-txt h1 {
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-size: 43px;
+  font-weight: 700;
+  padding: 0 6px;
+  margin-bottom: 24px;
+}
+.container main .youtube-wrapper .youtube-txt p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+.container main .youtube-wrapper .youtube {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container main .service {
+  padding: 54px;
+  height: 800px;
+  position: relative;
+}
+.container main .service img {
+  width: 100%;
+}
+.container main .service h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #212529;
+}
+.container main .service h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 3rem auto;
+  background-color: black;
+  margin-bottom: 5rem;
+}
+.container main .service .list-box {
+  display: flex;
+  justify-content: space-around;
+  height: 450px;
+  align-items: center;
+}
+.container main .service .list-box .list-txt {
+  padding: 24px;
+  color: #212529;
+}
+.container main .service .list-box .list .list-txt h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+.container main .service .list-box .list .list-txt p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.container main .service .list-box .list2 {
+  width: 30%;
+  height: 100%;
+}
+.container main .service .list-box .list1 {
+  width: 30%;
+  height: 80%;
+  opacity: 0.5;
+}
+.container main .service .list-box .list1 img {
+  width: 90%;
+  margin: 0 auto;
+}
+.container main .service .list-box .list2 {
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+.container main .service .circle {
+  width: 100%;
+  display: block;
+}
+
+.container main .service .circle ul {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container main .service .circle ul li {
+  background-color: lightskyblue;
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 5px;
+}
+.container main .service .circle ul li:nth-child(3) {
+  background-color: rgb(5, 64, 255);
+}
+
+.container main .spon {
+  width: 100%;
+  padding: 54px;
+  background-color: #f8f9fa;
+}
+.container main .spon img {
+  opacity: 0.5;
+  width: 100%;
+  transition: 0.3s;
+}
+.container main .spon img:hover {
+  opacity: 1;
+}
+.container main .spon ul {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  margin: 30px;
+  gap: 20px;
+}
+.container main .location {
+  width: 100%;
+  padding: 54px;
+}
+.container main .location h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 43px;
+  margin-bottom: 32px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.container main .location .loc-txt {
+  display: flex;
+  justify-content: center;
+}
+.container main .location ul li h3 {
+  font-weight: 600;
+}
+.container main .location .loc-txt li {
+  width: 50%;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.container main .location .loc-txt li:first-child {
+  border-bottom: 3px solid black;
+}
+.container main .location .map {
+  display: block;
+  width: 100%;
+  height: 40vw;
+  margin: 40px auto;
+}
+
+.container main .location ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.container main .location ul li:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.container main .talk {
+  padding: 54px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(
+      rgba(105, 169, 197, 0.8),
+      rgba(105, 169, 197, 0.9)
+    ),
+    url("./images/img-bg.jpg") fixed center center / cover;
+  color: #eee;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container main .talk h1 {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+.container main .talk p {
+  width: 90%;
+  margin: auto;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+.container main .talk a {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 9px 32px;
+  border: 3px solid #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 24px;
+  line-height: 34px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+.container main .talk a:hover {
+  background-color: white;
+  color: black;
+}
+.container main .dyami {
+  padding: 24px;
+  color: #212529;
+}
+.container main .dyami img {
+  padding: 40px 0;
+}
+.container main .dyami .widget {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 50px;
+}
+.container main .dyami .widget h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 25px;
+}
+.container main .dyami .widget p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.container main .dyami .widget ul {
+  display: flex;
+}
+.container main .dyami .widget ul li {
+  width: 14px;
+  margin: 10px;
+  overflow: hidden;
+}
+.container main .dyami .widget ul li svg {
+  transition: 0.3s;
+}
+.container main .dyami .widget ul li:hover svg {
+  transform: translateY(-140%);
+}
+.container main .dyami .widget ul li .youtube2 {
+  transition: 0.3s;
+  opacity: 0;
+}
+.container main .dyami .widget ul li .vimeo2 {
+  opacity: 0;
+  transition: 0.3s;
+}
+.container main .dyami .widget ul li .apple2 {
+  opacity: 0;
+  transition: 0.3s;
+}
+.container main .dyami .widget ul li .facebook2 {
+  opacity: 0;
+  transition: 0.3s;
+}
+.container main .dyami .widget ul li .insta2 {
+  opacity: 0;
+  transition: 0.3s;
+}
+.container main .dyami .widget ul li:hover .youtube2 {
+  opacity: 1;
+  fill: red;
+}
+.container main .dyami .widget ul li:hover .vimeo2 {
+  opacity: 1;
+  fill: violet;
+}
+.container main .dyami .widget ul li:hover .apple2 {
+  opacity: 1;
+  fill: #978484;
+}
+.container main .dyami .widget ul li:hover .facebook2 {
+  opacity: 1;
+  fill: blue;
+}
+.container main .dyami .widget ul li:hover .insta2 {
+  opacity: 1;
+  fill: #e91eb6;
+}
+.container footer {
+  color: #212529;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 0 40px;
+  height: 150px;
+}
+.container footer p:last-child {
+  color: #333333;
+}
