@@ -473,15 +473,15 @@ html {
   padding: 24px;
   color: #212529;
 }
-.container main .service .list-box .list-txt h2 {
+.container main .service .list-box .list .list-txt h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 6px;
   line-height: 1.5;
   width: 100%;
 }
-.container main .service .list-box .list-txt p {
+.container main .service .list-box .list .list-txt p {
   font-family: "Noto Sans KR", sans-serif;
   width: 100%;
   font-weight: 400;
@@ -489,6 +489,12 @@ html {
   line-height: 1.8;
   overflow: hidden;
   color: #212529;
+  font-size: 14px;
+}
+.container main .service .list-box .list3 .list-txt h2 {
+  font-size: 1.5rem;
+}
+.container main .service .list-box .list3 .list-txt p {
   font-size: 16px;
 }
 .container main .service .list-box .list {
