@@ -41,10 +41,9 @@ html {
   color: white;
   z-index: 9999;
 }
-.container main .up {
-  width: 20px;
-  height: 20px;
-  padding: 20px;
+.container main .up:hover {
+  color: black;
+  background-color: white;
 }
 .container main .kakao {
   border-radius: 40px;
@@ -85,6 +84,7 @@ html {
     center / cover;
   padding: 3rem;
   padding-top: 5rem;
+  height: 100vh;
 }
 
 .container main .creative h1 {
