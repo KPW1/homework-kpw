@@ -5,7 +5,7 @@ html {
 /* header */
 .container header {
   width: 100%;
-  height: 80px;
+  height: 70px;
   position: fixed;
   background: #fff;
   z-index: 999;
@@ -23,18 +23,20 @@ html {
 .container .header-wrapper .header-menu {
   display: flex;
 }
-.container .header-wrapper .header-menu li {
+.container .header-wrapper .header-menu li a {
   color: #444444;
-  padding: 26px 15px;
+  padding: 22px 15px;
   font-size: 1.1rem;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
 }
-
-.container header .header-wrapper img {
-  height: 80px;
+.container .header-wrapper .header-menu li a:hover {
+  background-color: lightskyblue;
+  color: white;
 }
-
+.container header .header-wrapper img {
+  height: 70px;
+}
 .container header .header-wrapper span {
   display: flex;
   align-items: center;
