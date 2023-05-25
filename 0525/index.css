@@ -367,10 +367,8 @@ html {
   position: absolute;
   top: 40%;
   left: 10px;
-
   transform: translateY(-50%) rotate(180deg);
 }
-
 .container main .business .busy-img .img-txt {
   padding: 1.5rem;
   display: flex;
@@ -473,6 +471,23 @@ html {
   padding: 24px;
   color: #212529;
 }
+.container main .service .list-box .list {
+  margin: 30px;
+  opacity: 0.5;
+  height: 90%;
+  width: 90%;
+}
+.container main .service .list-box .list3 {
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
 .container main .service .list-box .list .list-txt h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -497,30 +512,10 @@ html {
 .container main .service .list-box .list3 .list-txt p {
   font-size: 16px;
 }
-.container main .service .list-box .list {
-  margin: 30px;
-  opacity: 0.5;
-  height: 90%;
-  width: 90%;
-}
-
-.container main .service .list-box .list3 {
-  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-    100px 100px 80px rgba(0, 0, 0, 0.07);
-  opacity: 1;
-  height: 100%;
-  width: 100%;
-}
-
 .container main .service .circle {
   width: 100%;
   display: block;
 }
-
 .container main .service .circle ul {
   display: flex;
   justify-content: center;
