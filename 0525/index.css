@@ -574,12 +574,14 @@ html {
   width: 50%;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 28px;
   padding: 8px 16px;
   text-transform: uppercase;
   margin: auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   border-bottom: 1px solid #eee;
+  cursor: pointer;
 }
 .container main .location .loc-txt li:first-child {
   border-bottom: 3px solid black;
