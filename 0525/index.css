@@ -220,6 +220,15 @@ html {
   border-bottom: 1px solid #eee;
   opacity: 0.9;
 }
+.container main .brand ul li:nth-child(even) {
+  border-right: none;
+}
+.container main .brand ul li:nth-child(3) {
+  border-bottom: none;
+}
+.container main .brand ul li:nth-child(4) {
+  border-bottom: none;
+}
 .container main .brand ul li strong {
   opacity: 1;
   text-transform: capitalize;
