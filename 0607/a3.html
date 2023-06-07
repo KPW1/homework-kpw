@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <script>
+            const userId = "web";
+            const userPw = 1234;
+
+            let id = prompt ("아이디를 입력해주세요");
+            switch(id){
+                case userId:
+                    let pw = prompt("비밀번호를 입력해주세요");
+                    pw = +pw
+                    switch(pw) {
+                        case userPw:
+                            alert("로그인 되었습니다");
+                            break;
+                        default:
+                            alert("비밀번호가 틀렸습니다");
+                            break;
+                    }
+                    break;
+                default:
+                    alert("아이디가 틀렸습니다");
+                    break;
+            }
+        </script>
+    </body>
+</html>

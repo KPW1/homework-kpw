@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            let cof = prompt("아메리카노/카페라떼/카페모카/바닐라라떼 중 커피를 입력해주세요");
+
+            let price = ``;
+            switch(cof) {
+                case "아메리카노" :
+                    price = "15000";
+                    break;
+                case "카페라떼" :
+                    price = "20000";
+                    break;
+                case "카페모카" :
+                    price = "20000";
+                    break;
+                case "바닐라라떼":
+                    price = "25000";
+                    break;
+                default:
+                    document.body.innerHTML = "메뉴에 있는 커피만 주문 가능합니다";
+            }
+
+            if(price) {
+                document.body.innerHTML = `${cof}: ${price}`
+            }
+        </script>
+    </body>
+</html>
