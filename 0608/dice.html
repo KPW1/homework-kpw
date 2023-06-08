@@ -1,0 +1,22 @@
+
+<html>
+    <body>
+        <script>
+    let a = 1;
+    let b = 1;
+    txt = '';
+    while (a<=6) {
+        b=1;
+        while(b<=6) {
+            if(a+b==6) {
+                txt += `${a},${b} <br>`;
+            } 
+            b++ 
+        }
+        a++;
+    } 
+    document.body.innerHTML =txt;
+
+        </script>
+    </body>
+</html>
